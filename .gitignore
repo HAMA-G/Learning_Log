@@ -1,0 +1,20 @@
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+
+# ===== Obsidian =====
+.obsidian/
+.obsidian-workspace
+.trash/
+
+# ===== 個人用・非公開メモ =====
+private/
+secret.md
+
+# ===== 環境依存ファイル =====
+.env
+.env.*
+
+# ===== 一時ファイル =====
+*.log
+*.tmp
