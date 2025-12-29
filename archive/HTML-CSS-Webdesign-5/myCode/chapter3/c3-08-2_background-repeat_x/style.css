@@ -1,0 +1,24 @@
+/* 縦・横報告に繰り返して表示 */
+/* body {
+	background-image: url(images/bg.png);
+	background-repeat: repeat;
+} */
+
+
+/* 横方向に繰り返して表示 */
+body {
+	background-image: url(images/bg.png);
+	background-repeat: repeat-x;
+}
+
+/* 縦方向kに繰り返して表示 */
+/* body {
+	background-image: url(images/bg.png);
+	background-repeat: repeat-y;
+} */
+
+/* 繰り返さない */
+/* body {
+	background-image: url(images/bg.png);
+	background-repeat: no-repeat;
+} */

@@ -1,0 +1,15 @@
+.container {
+	display: grid;
+	/* 1列に3つのグリッドを200pxずつ並べる場合（並べる数分半角スペースで分けて記載する） */
+	/* fr→fraction(比率)：割合指定することでウインドウサイズに応じてグリッドのサイズが変わる */
+	/* grid-template-columns: 200px 200px 200px; */
+	grid-template-columns: 1fr 1fr 1fr;
+	/* グリッド間の余白を指定する */
+	gap: 10px;
+}
+
+.item {
+	background: #0bd;
+	color: #fff;
+	padding: 10px;
+}

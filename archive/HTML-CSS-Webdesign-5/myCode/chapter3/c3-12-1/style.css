@@ -1,0 +1,52 @@
+/* none：リストマーカーを非表示 */
+/* disc：黒丸 */
+/* circle：白丸 */
+/* square：黒四角 */
+/* decimal：数字 */
+
+ul {
+	/* リストマーカーの非表示 */
+	/* list-style-type: none; */
+	/* 黒丸 */
+	/* list-style-type: disc; */
+	/* 白丸 */
+	/* list-style-type:circle */
+	/* 黒四角 */
+	/* list-style-type: square; */
+	/* 数字 */
+	list-style-type: decimal;
+	/* 0をつけた数字 */
+	/* list-style-type: decimal-leading-zero; */
+	/* 小文字のローマ数字 */
+	/* list-style-type: lower-roman; */
+	/* 大文字のローマ数字 */
+	/* list-style-type: upper-roman; */
+	/* 漢数字 */
+	/* list-style-type: cjk-ideographoic; */
+	/* ひらがな */
+	/* list-style-type: hiragana; */
+	/* カタカナ */
+	/* list-style-type: katakana; */
+	/* ひらがなのいろは */
+	/* list-style-type: hiragana-iroha; */
+	/* カタカナのイロハ */
+	/* list-style-type: katakana-iroha; */
+	/* 小文字のアルファベット */
+	/* list-style-type: lower-alpha; */
+	/* list-style-type: lower-latin; */
+	/* 大文字のアルファベット */
+	/* list-style-type: upper-alpha; */
+	/* list-style-type: upper-latin; */
+	/* 小文字の古典的なギリシャ文字 */
+	/* list-style-type: lower-greek; */
+	/* ヘブライ数字 */
+	/* list-style-type: hebrew; */
+	/* アルメニア数字 */
+	/* list-style-type: armenian; */
+	/* グルジア数字 */
+	/* list-style-type: georgian; */
+}
+
+ol {
+	list-style-type: hiragana;
+}

@@ -1,0 +1,14 @@
+/* CSSの優先順位 */
+/* id > class > tag */
+
+p {
+	color: #999;
+}
+
+#blue {
+	color: #0bd;
+}
+
+.orange {
+	color: #fa2;
+}

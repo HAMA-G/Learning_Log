@@ -1,0 +1,10 @@
+p {
+	border-style: solid;
+	border-color: tomato;
+}
+
+div {
+	border-style: solid;
+	/* 線の色が上：tanの色、右：#0bdの色、下：tomatoの色、左：#000の色で配色 */
+	border-color: tan #0bd tomato #000
+}

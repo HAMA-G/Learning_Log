@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSSの単位</title>
+		
+		<style>
+			html {
+				font-size: 12px;
+			}
+
+			article {
+				font-size: 1em;
+				/* 左から右に読む */
+				direction: ltr;
+				/* 右から左に読む */
+				/* direction: rtl; */
+				/* writing-modeのデフォルト */
+				writing-mode: horizontal-tb;
+				/* writing-mode: vertical-rl; */
+				/* writing-mode: sideways-rl; */
+			}
+
+			h1 {
+				font-size: 1.5em;
+				/* 文章の始まりに記載する */
+				border-inline-start: 5px solid #333;
+				padding-inline-start: 10px;
+
+				border-block-start: 5px solid #333;
+				padding-block-start: 10px;
+			}
+
+			.box {
+				background-color: #333;
+			}
+
+			.container {
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box"></div>
+		</div>
+		<article>
+			<h1>見出し</h1>
+			<p>本文です</p>
+		</article>
+	</body>
+</html>

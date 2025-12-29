@@ -1,0 +1,24 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	/* 親要素の高さに合わせて広げる配置(初期値) */
+	align-content: stretch;
+	/* 親要素の開始位置から配置。（上揃え）	 */
+	/* align-content: flex-start; */
+	/* 親要素の開始位置から配置。（下揃え） */
+	/* align-content: flex-end; */
+	/* 中央揃え */
+	/* align-items: center; */
+	/* 最初と最後の子要素を上下の端に配置し、残りの要素は均等に間隔を開けて配置 */
+	align-content: space-between;
+	/* 上下端にある子要素も含め、均等に感覚をあけて配置 */
+	/* align-items: space-around; */
+	height: 300px;
+}
+
+.item {
+	background: #0bd;
+	color: #fff;
+	margin: 10px;
+	padding: 10px;
+}

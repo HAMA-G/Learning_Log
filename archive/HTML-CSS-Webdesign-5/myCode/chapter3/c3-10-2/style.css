@@ -1,0 +1,10 @@
+/* まとめてmarginを指定する方法 */
+/* margin:四方全て→margin: 10px; */
+/* margin:上下 左右→margin: 10px 20px; */
+/* margin:上 左右 下→margin: 10px 20px 30px; */
+/* margin: 上 右 下 左→margin: 10px 20px 30px 40px; */
+
+div {
+	background: #0bd;
+	margin: 30px 0 0 100px;
+}

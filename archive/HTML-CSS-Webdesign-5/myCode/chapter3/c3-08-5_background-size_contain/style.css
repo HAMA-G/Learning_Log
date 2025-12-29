@@ -1,0 +1,7 @@
+/* 画像の縦横比を保持したまま画像が全て表示されるように表示する */
+div {
+	background-image: url(images/bg-airplane.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100vh;
+}

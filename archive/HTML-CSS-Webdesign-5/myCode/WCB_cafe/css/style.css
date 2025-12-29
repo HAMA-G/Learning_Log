@@ -1,0 +1,536 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+	/* 行の高さの設定 */
+	line-height: 1.7;
+	color: #432;
+}
+
+a {
+	/* CSSの一括設定（noneの場合は設定をなくす） */
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	/* 横幅最大1100pxの指定 */
+	max-width: 1100px;
+	/* 中央に配置する指定 */
+	margin: 0 auto;
+	/* スマートフォン向け余白の指定 */
+	padding: 0 4%;
+}
+
+/* 大きな背景画像 */
+.big-bg {
+	/* 画像の縦横の比率を保ったまま画面いっぱいに広げる */
+	background-size: cover;
+	/* 画像の左右中央揃え、上付きの設定 */
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+
+/* 見出し */
+.page-title {
+	/* 見出しのサイズ：HTMLのタグの文字サイズの5倍のフォントサイズ */
+	font-size: 5rem;
+	/* page-titleのクラスのフォントの指定 */
+	font-family: 'Philosopher', serif;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+/* ボタン */
+.button {
+	/* buttonクラスのフォント、色、角丸、余白の指定 */
+	font-size: 1.375rem;
+	background: #0bd;
+	color: #fff;
+	border-radius: 5px;
+	padding: 18px 32px;
+}
+
+.button:hover {
+	/* カーソルをボタンに重ねた時の色の指定 */
+	background: #0099aa;
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 210px;
+	margin-top: 14px;
+}
+
+.main-nav {
+	display: flex;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	margin-top: 34px;
+	list-style: none;
+}
+
+.main-nav li {
+	margin-left: 36px;
+}
+
+.main-nav a {
+	color: #432;
+}
+
+.main-nav a:hover {
+	color: #0bd;
+}
+/* HOME
+------------------------------- */
+#home {
+	/* 背景画像の指定と画面の高さの指定 */
+	background-image: url(../images/main-bg.jpg);
+	/* background-color: #0bd; */
+	/* ブレンドモード指定：乗算 */
+	/* background-blend-mode: multiply; */
+	/* ブレンドモード指定：スクリーン */
+	/* background-blend-mode:screen; */
+	/* ブレンドモード指定：オーバーレイ */
+	/* background-blend-mode:overlay; */
+	/* ブレンドモード指定：暗く */
+	/* background-blend-mode:darken; */
+	/* ブレンドモード指定：明るく */
+	/* background-blend-mode: lighten; */
+	/* ブレンドモード指定：覆い焼きカラー */
+	/* background-blend-mode: color-dodge; */
+	/* ブレンドモード指定：焼き込みカラー */
+	/* background-blend-mode:color-burn; */
+	/* ブレンドモード指定：ハードライト */
+	/* background-blend-mode: hard-light; */
+	/* ブレンドモード指定：ソフトライト */
+	/* background-blend-mode: soft-light; */
+	/* ブレンドモード指定：差の絶対値 */
+	/* background-blend-mode:difference; */
+	/* ブレンドモード指定：除外 */
+	/* background-blend-mode: exclusion; */
+	/* ブレンドモード指定：色相 */
+	/* background-blend-mode: hue; */
+	/* ブレンドモード指定：彩度 */
+	/* background-blend-mode:saturation; */
+	/* ブレンドモード指定：カラー */
+	/* background-blend-mode: color; */
+	/* ブレンドモード指定：輝度 */
+	/* background-blend-mode: luminosity; */
+	/* グラデーションカラー：線形グラデーション */
+	/* background-image: linear-gradient(#c9ffbf, #ffafbd); */
+	/* グラデーションカラー：円形グラデーション */
+	/* background-image: radial-gradient(#c9ffbf, #ffafbd); */
+	/* 背景画像にブレンドモードでグラデーションカラーを重ねる */
+	/* background-image: url(../images/main-bg.jpg),linear-gradient(#c9ffbf, #ffafbd); */
+	background-blend-mode: luminosity;
+	min-height: 100vh;
+}
+
+#home .page-title {
+	/* テキストの大文字、小文字、全角の指定「none」は変換しない指定 */
+	text-transform: none;
+}
+
+.home-content {
+	/* 中央寄せ */
+	text-align: center;
+	/* 余白の指定 */
+	margin-top: 10%;
+}
+
+.home-content p {
+	font-size: 1.125rem;
+	margin: 10px 0 42px;
+}
+
+/* NEWS
+------------------------------- */
+#news {
+	background-image: url(../images/news-bg.jpg);
+	height: 270px;
+	margin-bottom: 40px;
+}
+
+#news .page-title {
+	text-align: center;
+}
+
+.news-contents {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+/* 記事部分 */
+article {
+	width: 60%;
+	order: 2;
+}
+
+article img {
+	margin-bottom: 20px;
+}
+
+article p {
+	margin-bottom: 1rem;
+}
+
+
+.post-info {
+	position: relative;
+	padding-top: 4px;
+	margin-bottom: 40px;
+}
+
+.post-date {
+	background: #0bd;
+	border-radius: 50%;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	font-size: 1.625rem;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	padding-top: 10px;
+}
+
+.post-date span {
+	font-size: 1rem;
+	border-top: 1px rgba(255,255,255,.5) solid;
+	padding-top: 6px;
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.post-title {
+	font-family: "Yu Mincho", "YuMincho", serif;
+	font-size: 2rem;
+	font-weight: normal;
+}
+
+.post-title,
+.post-cat {
+	margin-left: 120px;
+}
+
+/* サイドバー */
+aside {
+	width: 22%;
+	order: 3;
+}
+
+aside p {
+	padding: 12px 10px;
+}
+
+.sub-title {
+	font-size: 1.375rem;
+	padding: 0 8px 8px;
+	border-bottom: 2px #0bd solid;
+	font-weight: normal;
+}
+
+.sub-menu {
+	margin-bottom: 60px;
+	list-style: none;
+}
+
+.sub-menu li {
+	border-bottom:1px #ddd solid;
+}
+
+.sub-menu a {
+	color: #432;
+	padding: 10px;
+	display: block;
+}
+
+.sub-menu a:hover {
+	color: #0bd;
+}
+
+.ad {
+	order: 1;
+}
+
+/* MENU
+------------------------------- */
+#menu {
+	background-image: url(../images/menu-bg.jpg);
+	min-height: 100vh;
+}
+
+.menu-content {
+	max-width: 560px;
+	margin-top: 10%;
+}
+
+.menu-content .page-title {
+	text-align: center;
+}
+
+.menu-content p {
+	font-size: 1.125rem;
+	margin: 10px 0 0;
+}
+
+.grid {
+	display: grid;
+	gap: 26px;
+	grid-template-columns: repeat(auto-fit, minmax(248px,1fr));
+	margin-top: 6%;
+	margin-bottom: 50px;
+}
+
+.big-box {
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+}
+
+.big-box img {
+	height: 94%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* CONTACT
+------------------------------- */
+#contact {
+	background-image: url(../images/contact-bg.jpg);
+	min-height: 100vh;
+}
+
+/* フォーム */
+form div {
+	margin-bottom: 14px;
+}
+
+label {
+	font-size: 1.125rem;
+	margin-bottom: 10px;
+	display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	background: rgba(255, 255, 255, .5);
+	border: 1px #fff solid;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+	width: 100%;
+	max-width: 240px;
+}
+
+textarea {
+	width: 100%;
+	max-width: 480px;
+	height: 6rem;
+}
+
+input[type="submit"] {
+	border: none;
+	cursor: pointer;
+	line-height: 1;
+}
+
+/* 店舗情報・地図 */
+#location {
+	padding: 4% 0;
+}
+
+#location .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.location-info {
+	width: 22%;
+}
+
+.location-info p {
+	padding: 12px 10px;
+}
+
+.location-map {
+	width: 74%;
+}
+
+/* iframe */
+iframe {
+	width: 100%;
+}
+
+/* SNS */
+#sns {
+	background: #FAF7F0;
+	padding: 4% 0;
+}
+
+#sns .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+#sns .sub-title {
+	margin-bottom: 30px;
+}
+.sns-box {
+	width: 30%;
+}
+
+/* フッター
+------------------------------- */
+footer {
+	background: #432;
+	text-align: center;
+	padding: 26px 0;
+}
+
+footer p {
+	color: #fff;
+	font-size: 0.875rem;
+}
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+	h1 {
+		color: #0bd;
+	}
+
+	.page-title {
+		font-size: 2.5rem;
+	}
+
+	.page-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* HEADER */
+	.main-nav {
+		font-size: 1rem;
+		margin-top: 10px;
+	}
+	.main-nav li {
+		margin: 0 20px;
+	}
+
+	/* HOME */
+	.home-content {
+		margin-top: 20%;
+	}
+
+	/* NEWS */
+	.news-contents {
+		flex-direction: column;
+	}
+
+	article,
+	aside {
+		width: 100%;
+	}
+
+	#news .page-title {
+		margin-top: 30px;
+	}
+
+	aside {
+		margin-top: 60px;
+	}
+
+	.post-info {
+		margin-bottom: 30px;
+	}
+
+	.post-date {
+		width: 70px;
+		height: 70px;
+		font-size: 1rem;
+	}
+
+	.post-date span {
+		font-size: 0.875rem;
+		padding-top: 2px;
+	}
+
+	.post-title {
+		font-size: 1.375rem;
+	}
+
+	.post-cat {
+		font-size: 0.875rem;
+		margin-top: 10px;
+	}
+
+	.post-title,
+	.post-cat {
+		margin-left: 80px;
+	}
+
+	/* MENU */
+	.menu-content {
+		margin-top: 20%;
+	}
+
+	.big-box {
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	.big-box img {
+		height: auto;
+	}
+
+	/* CONTACT */
+	#contact .page-title {
+		margin-top: 40px;
+	}
+
+	/* フォーム */
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		max-width: 100%;
+	}
+
+	/* 店舗情報 */
+	#location .wrapper,
+	#sns .wrapper {
+		flex-direction: column;
+	}
+
+	.location-info,
+	.location-map,
+	.sns-box {
+		width: 100%;
+	}
+
+	.sns-box {
+		margin-bottom: 30px;
+	}
+}

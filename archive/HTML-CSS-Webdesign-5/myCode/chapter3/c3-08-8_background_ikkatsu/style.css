@@ -1,0 +1,20 @@
+/* backgroundプロパティの一括指定 */
+/* 一括指定できるものは下記 */
+/* ・background-clip
+・background-color
+・background-image
+・background-origin
+・background-position
+・background-repeat
+・background-size
+・background-attachment */
+/* background-sizeの値はbackground-positionの直後に「/」で区切る必要がある */
+
+div {
+		background: #70a2dc
+					url(images/bg-airplane.jpg) 
+					no-repeat
+					center
+					ßbottom/cover;
+		height: 100vh;
+	}

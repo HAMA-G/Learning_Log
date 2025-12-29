@@ -1,0 +1,27 @@
+p {
+	border-width: 4px;
+	/* 線の非表示 */
+	/* border-style: none; */
+	/* 1本の実践 */
+	border-style: solid; 
+	/* 2本の実践 */
+	/* border-style: double; */
+	/* 破線 */
+	/* border-style: dashed; */
+	/* 点線 */
+	/* border-style: dotted; */
+	/* 立体的な谷型の線 */
+	/* border-style: groove; */
+	/* 立体的な山型の線 */
+	/* border-style: ridge; */
+	/* 囲まれた部分が凹んで見える立体的な線 */
+	/* border-style: inset; */
+	/* 囲まれた部分が浮き上がって見える立体的な線 */
+	/* border-style: outset; */
+}
+
+div {
+	border-width: 4px;
+	/* 上：二重線、右：点線、下：実践、左：山形の線 */
+	border-style: double dotted solid ridge;
+}

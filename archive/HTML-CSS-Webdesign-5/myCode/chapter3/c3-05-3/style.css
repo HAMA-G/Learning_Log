@@ -1,0 +1,4 @@
+p {
+	font-weight: bold;
+	/* その他に設定できるもの：normal(標準), bold(太字), lighter(一段階細く), bolder(一段階太く) */
+}

@@ -1,0 +1,63 @@
+/* UA CSS 標準CSSを打ち消すもの reset.css, Normalize.css */
+/* CSSをリセットする */
+@import  url('normalize.css');
+
+body {
+	/* カラーコード 3桁から8桁で記述される */
+	background-color: #eee;
+}
+h1 {
+text-align: center;
+font-size: 1.5em;
+}
+
+h2 {
+	margin-top: 50px;
+}
+
+p {
+color: dimgray;
+}
+
+header {
+	background-color: #fff;
+	/* ショートハンド:時計回り（上　右　下　左） */
+	/* padding:30px 40px 50px 60px; */
+	/* ショートハンド：3つ指定の範囲上　左右　下 */
+	/* padding: 30px 40px 50px; */
+	/* ショートハンド：2つ指定の範囲上下　左右 */
+	/* padding: 20px 30px;  */
+	/* padding-top: 30px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+	padding-left: 20px; */
+	/* margin: 40px; */
+}
+
+header, main, footer {
+	padding: 20px 30px;
+}
+
+.card {
+	background-color: #fff;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.center {
+	text-align: center;
+}
+
+.text-small {
+	font-size: .8em;
+}
+
+/* 詳細度：h3が後にあっても詳細度からclass属性にcardが指定されているh3タグについては.card h3が優先される */
+.card h3 {
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 5em;
+}

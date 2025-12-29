@@ -1,0 +1,20 @@
+.container {
+	display: flex;
+	/* 左揃え（初期値） */
+	/* justify-content: flex-start; */
+	/* 右揃え */
+	justify-content: flex-end;
+	 /* 中央揃え */
+	/* justify-content: center; */
+	/* 両端と均等配置 */
+	/* justify-content: space-between; */
+	/* 均等配置 */
+	/* justify-content:space-around; */
+}
+
+.item {
+	background: #0bd;
+	color: #fff;
+	margin: 10px;
+	padding: 10px;
+}

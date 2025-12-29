@@ -1,0 +1,18 @@
+body {
+	background-color: #fee;
+}
+
+h1 {
+	font-family: "M PLUS Rounded 1c", serif;
+	color: #0bd;
+	background-color: #faa;
+}
+
+h2 {
+	color: navy;
+}
+
+/* 透明度0.5で色はRGB指定している */
+p {
+	color: rgba(10, 130, 165, .5); 
+}

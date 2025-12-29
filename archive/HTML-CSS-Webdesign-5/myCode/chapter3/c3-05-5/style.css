@@ -1,0 +1,9 @@
+@charset "UTF-8";
+p {
+	text-align: justify;
+	/* 文章を揃える：指定方法 */
+	/* left:左揃え */
+	/* right:右揃え */
+	/* center:中央揃え */
+	/* justify:両端揃え */
+}
