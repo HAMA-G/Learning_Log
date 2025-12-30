@@ -7,11 +7,16 @@
 	</head>
 	<body>
 		<p>
-			120円の税込金額は、
 			<script>
-				document.write(120 * 1.1);
+				let price = 120;
 			</script>
-			円です。
+			<script>
+				document.write(price);
+				document.write("円の税込金額は、");
+				// 税込金額の計算結果を表示する
+				document.write(price * 1.1);
+				document.write("円です。");
+			</script>
 		</p>
 	</body>
 </html>
