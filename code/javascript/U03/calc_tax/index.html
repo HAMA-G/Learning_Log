@@ -8,14 +8,11 @@
 	<body>
 		<p>
 			<script>
-				let price = 120;
-			</script>
-			<script>
-				document.write(price);
-				document.write("円の税込金額は、");
+				let price = 126;
+				const tax = 1.1;
+				document.write(price + "円の税込金額は、");
 				// 税込金額の計算結果を表示する
-				document.write(price * 1.1);
-				document.write("円です。");
+				document.write((price * tax) + "円です。");
 			</script>
 		</p>
 	</body>
