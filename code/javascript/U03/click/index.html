@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<button id="open_button">表示する</button>
+	<div>
+		<p>長いコンテンツ</p>
+		<p>長いコンテンツ</p>
+		<p>長いコンテンツ</p>
+		<p>長いコンテンツ</p>
+		<p>長いコンテンツ</p>
+		<p>長いコンテンツ</p>
+		<p>長いコンテンツ</p>
+		<p>長いコンテンツ</p>
+		<p>長いコンテンツ</p>
+		<p>長いコンテンツ</p>
+	</div>
+
+	<script>
+		/*
+		const caution = () => {
+			alert('クリックされました');
+		}
+		*/
+
+		const btn = document.getElementById('open_button');
+		btn.addEventListener('click', () => {
+			alert('クリックされました');
+		});
+
+		/*
+		function caution() {
+			alert('クリックされました');
+		}
+		
+		const caution = function() {
+			alert('クリックされました');
+		}
+		*/
+	</script>
+</body>
+</html>
