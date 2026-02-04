@@ -18,7 +18,18 @@
 			</div>
 		</form>
 		<script>
-			document.querySelector('button').disabled = true;
+			const button = document.querySelector('button');
+			const checkbox = document.querySelector('#agree');
+			button.disabled = true;
+			checkbox.addEventListener('change', () =>{
+				// if (checkbox.checked === true) {
+				// 	button.disabled = false;
+				// } else {
+				// 	button.disabled = true;
+				// }
+
+				button.disabled = !checkbox.checked;
+			})
 		</script>
 	</body>
 </html>
